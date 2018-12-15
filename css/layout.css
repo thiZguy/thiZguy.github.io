@@ -148,6 +148,14 @@ header .scrolldown a:hover { color: #0080ff; }
 .subitem {
    margin-bottom: 40px;
 }
+.experience {
+   text-align: center;
+   color: #45494c;
+   margin-bottom: 40px;
+   margin-top: 9px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 42px
+}
 .opaque { background-color: #333; }
 
 /* hide toggle button */
