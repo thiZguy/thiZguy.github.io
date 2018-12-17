@@ -295,9 +295,9 @@ p a, p a:visited { line-height: inherit; }
 
 /*  4. List  --------------------------------------------------------- */
 
-ul, ol { margin-bottom: 24px; margin-top: 12px; }
+ul, ol { margin-bottom: 24px; margin-top: 12px; font-family: Arial, Helvetica, sans-serif }
 ul { list-style: none outside; }
-ol { list-style: decimal; }
+ol { list-style: decimal; color: #313131 }
 ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
 ul.square { list-style: square outside; }
 ul.circle { list-style: circle outside; }

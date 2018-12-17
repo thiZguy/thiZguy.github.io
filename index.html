@@ -9,7 +9,7 @@
    <meta charset="utf-8">
 	<title>Santiago Montero</title>
 	<meta name="description" content="Page created by Santiago Montero for Santiago Montero ;-)">
-	<meta name="author" content="thiZguy">
+	<meta name="author" content="https://github.com/thiZguy/">
 
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -22,7 +22,9 @@
 
    <!-- Script
    ================================================== -->
-	<script src="js/modernizr.js"></script>
+   <script src="js/modernizr.js"></script>
+   <script src="js/moment.min.js"></script>
+   <script src="js/Chart.min.js"></script>
    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
 
 </head>
@@ -107,14 +109,14 @@
                      <div class="row subitem">
                            <div class="six columns">
                               <h5>California Sexual Harassment Attorney (March 2018)</h5>
-                              <ul>
+                              <ol>
                                  <li>App for consulting Dan Gilleon's California sexual harassment attorney law firm</li>
                                  <li>It has instant phone call buttons</li>
                                  <li>List the most common services and their info</li>
                                  <li>Uses a search bar</li>
-                              </ul>
+                              </ol>
                            </div>
-                           <div class="six columns">
+                           <div class="six columns align-center">
                               <img class="app-screenshot"  src="./images/ca-sha1.jpg" alt="" />
                               <br/>
                               <p>Soon...   <br/> App Store | CA SHA</p>
@@ -141,14 +143,14 @@
                      <div class="row subitem">
                            <div class="six columns">
                               <h5>Fino Market (March 2018)</h5>
-                              <ul>
+                              <ol>
                                  <li>App for ordering food</li>
                                  <li>Done for the company employees</li>
                                  <li>takes money from the employee's monthly salary depending on it's orders</li>
                                  <li>Uses shopping car</li>
-                              </ul>
+                              </ol>
                            </div>
-                           <div class="six columns">
+                           <div class="six columns align-center">
                               <img class="app-screenshot"  src="./images/market_sc.jpg" alt="" />
                               <br/>
                               <a target="_blank" href="https://play.google.com/store/apps/details?id=codecraft.fino.market">Play Store | FINO Market</a>
@@ -159,14 +161,14 @@
                      <div class="row subitem">
                            <div class="six columns">
                               <h5>Fino Finance LLC (January 2018)</h5>
-                              <ul>
+                              <ol>
                                  <li>App for reviewing Quotes, Accountsand Documents of a Broker</li>
                                  <li>User can sign Documents</li>
                                  <li>Implements Login</li>
                                  <li>Dynamic navigation bar</li>
-                              </ul>
+                              </ol>
                            </div>
-                           <div class="six columns">
+                           <div class="six columns align-center">
                               <img class="app-screenshot"  src="./images/finance_2.jpg" alt="" />
                               <br/>
                               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.codecraftfino">Play Store | FINO Finance</a>
@@ -177,12 +179,12 @@
                      <div class="row subitem">
                         <div class="six columns">
                            <h5>Fino Balance LLC (November 2017)</h5>
-                           <ul>
+                           <ol>
                               <li>App for “bonuses” Withdraw</li>
                               <li>Checkouts company bonuses so they can be paid in the employee (the user) monthly payment</li>
-                           </ul>
+                           </ol>
                         </div>
-                        <div class="six columns">
+                        <div class="six columns align-center">
                            <img class="app-screenshot"  src="./images/balancecapture.jpg" alt="" />
                            <br/>
                            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.codecraft.balance">Play Store | FINO Balance</a>
@@ -202,7 +204,6 @@
                   <h3>Backend development</h3>
                   <p class="info">Jr. software analyst<span>&bull;</span> <em class="date">Megagroup C.A (August 2016 | December 2016)</em></p>
                   <p>Document consulting system for Colombia's Minsalud, was done with microservices using REST, JAVA and JSON.</p>
-                  <br>
                   <a target="_blank" href="https://www.megagroupla.com/">Fabrica de Configuracion - Megagroup C.A</a>
 
                </div>
@@ -221,26 +222,35 @@
       <div class="row">
 
         <div class="twelve columns collapsed">
-
-            <h2 class="info">Knowledge</h2>
-    
-                <h4>a) Languages</h4>
-    
-                <dl>
-                    <dt><b>Javascript, Java, Dart, C#</b></dt>
-                </dl>
-    
-                <h4>b) Frameworks/Libraries</h4>
-    
-                <dl>
-                    <dt><b>Bootstrap, React Native, Flutter, Heroku, Meteor, Node.js Firebase, Git</b></dt>
-                </dl>
-    
-                <h4>c) Others</h4>
-    
-                <dl>
-                    <dt><b>Jetbrain's Webstorm, Android Studio, Xcode, VS Code, Atom, SourceTree, Bitbucket, JIRA, Icons 8's Lunacy and Postman</b></dt>
-                </dl>
+           <h2 class="info">Knowledge</h2>
+           <!-- Charts -->
+           <div class="row">
+              <div class="four columns align-center">
+                  <h3>Languages</h3>
+                  <canvas id="languagesChart" width="250px" height="250px" style="display: unset"></canvas>
+                  <script src="js/charts/chart.languages.js"></script>
+              </div>
+              <div class="four columns align-center">
+                 <h3>Tools</h3>
+                  <canvas id="toolsChart" width="250px" height="250px" style="display: unset"></canvas>
+                  <script src="js/charts/chart.tools.js"></script>
+              </div>
+              <div class="four columns align-center">
+                  <h3>Other technologies</h3>
+                   <canvas id="thirdChart" width="250px" height="250px" style="display: unset"></canvas>
+                   <script  src="js/charts/chart.libraries.js"></script>
+               </div>
+           </div>
+           <!-- API's Chart -->
+           <div class="row">
+               
+            </div>
+            <br/>
+            <!-- "Others" part -->
+            <h4>IDES</h4>
+            <dl>
+               <dt><b>Jetbrain's Webstorm, Android Studio, Xcode, VS Code, Atom, Icons 8's Lunacy</b></dt>
+            </dl>
     
         </div> <!-- twelve columns end -->
 
@@ -256,11 +266,11 @@
 
          <div class="twelve columns">
             <h1>Reach me</h1><br>
-            <ul class="social-links">
+            <ol class="social-links">
                <li><a target="_blank" href="https://linkedin.com/in/santiago-montero1"><i class="fa fa-linkedin fa-3x"></i></a></li>
                <li><a target="_blank" href="https://github.com/thiZguy"><i class="fa fa-github fa-3x"></i></a></li>
                <li><a target="_blank" href="mailto:santiagojmontero@outlook.com?subject=we%20want%20you!&body=We%20are%20about%20to%20make%20an%20excelent%20offer%20to%20you!"><i class="fa fa-envelope fa-3x"></i></a></li>
-            </ul>
+            </ol>
          </div>
 
          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
@@ -278,6 +288,7 @@
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
+   <!-- my scripts -->
    <script src="js/init.js"></script>
 
 </body>
