@@ -1,6 +1,6 @@
 var ctx = document.getElementById("languagesChart").getContext('2d');
 var languagesChart = new Chart(ctx, {
-  type: 'doughnut',
+  type: 'bar',
   data: {
       labels: [
         'JSX',
@@ -12,7 +12,7 @@ var languagesChart = new Chart(ctx, {
         'C#'
       ],
       datasets: [{
-            label: 'Languages and framework base',
+            label: 'Languages',
             data: [6, 9, 3, 6, 5, 5, 4],
             backgroundColor: [
               'rgba(255, 99, 132, 0.2)',
@@ -36,7 +36,14 @@ var languagesChart = new Chart(ctx, {
       }]
   },
   options: {
-      responsive: false,
-      maintainAspectRatio: false,
+      responsive: true,
+      maintainAspectRatio: true,
+      scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
+    }
   }
 });

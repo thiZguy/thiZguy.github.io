@@ -195,7 +195,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #0080ff; }
+ul#nav li.current a { color: #00b6ff; }
 
 
 /* ------------------------------------------------------------------ */
@@ -214,7 +214,7 @@ ul#nav li.current a { color: #0080ff; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #000000;
+   color: #ffffff;
    margin-bottom: 12px;
 }
 #about h1 {
@@ -1021,8 +1021,7 @@ footer .social-links li:first-child { margin-left: 0; }
   position: relative;
 }
 
-#networks h1{
-  font: 26px/34px 'opensans-bold', sans-serif;
+#networks h2{
   color: #EBEEEE;
   margin-bottom: 6px;
   text-transform: uppercase;

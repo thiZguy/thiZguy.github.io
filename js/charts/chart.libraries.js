@@ -1,6 +1,6 @@
 var ctx = document.getElementById("thirdChart").getContext('2d');
 var thirdChart = new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
       labels: [
           'React-Native',
@@ -11,7 +11,7 @@ var thirdChart = new Chart(ctx, {
           'Meteor'
       ],
       datasets: [{
-            label: 'Tools',
+            label: 'Frameworks & Tools',
             data: [10, 4, 7, 6, 4, 4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -33,7 +33,14 @@ var thirdChart = new Chart(ctx, {
       }]
     },
     options: {
-      responsive: false,
-      maintainAspectRatio: false,
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero:true
+              }
+          }]
+      }
     }
 });
