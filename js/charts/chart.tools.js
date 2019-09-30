@@ -4,8 +4,8 @@ var toolsChart = new Chart(ctx, {
   data: {
       labels: [
         'Git',
-        'Npm/Yarn',
-        'SourceTree/Bitbucket',
+        'Npm',
+        'Bitbucket',
         'Github',
         'JIRA',
         'Postman',

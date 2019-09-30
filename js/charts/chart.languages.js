@@ -3,6 +3,7 @@ var languagesChart = new Chart(ctx, {
   type: 'bar',
   data: {
       labels: [
+        'Python',
         'JSX',
         'Javascript',
         'Dart',
@@ -13,8 +14,9 @@ var languagesChart = new Chart(ctx, {
       ],
       datasets: [{
             label: 'Languages',
-            data: [6, 9, 3, 6, 5, 5, 4],
+            data: [4,8, 9, 3, 6, 4, 5, 3],
             backgroundColor: [
+              'rgba(100, 10, 132, 0.2)',
               'rgba(255, 99, 132, 0.2)',
               'rgba(54, 162, 235, 0.2)',
               'rgba(255, 206, 86, 0.2)',
@@ -24,6 +26,7 @@ var languagesChart = new Chart(ctx, {
               'rgba(64, 159, 64, 0.2)',
             ],
             borderColor: [
+              'rgba(100, 10, 132, 1)',
               'rgba(255,99,132,1)',
               'rgba(54, 162, 235, 1)',
               'rgba(255, 206, 86, 1)',

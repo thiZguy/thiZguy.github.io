@@ -3,7 +3,7 @@ var thirdChart = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: [
-          'React-Native',
+          'React',
           'Flutter',
           'Firebase',
           'Mailgun',
@@ -12,7 +12,7 @@ var thirdChart = new Chart(ctx, {
       ],
       datasets: [{
             label: 'Frameworks & Tools',
-            data: [10, 4, 7, 6, 4, 4],
+            data: [8, 4, 7, 6, 4, 4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
