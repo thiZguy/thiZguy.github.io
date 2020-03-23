@@ -1,6 +1,6 @@
 var ctx = document.getElementById("languagesChart").getContext('2d');
 var languagesChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'doughnut',
   data: {
       labels: [
         'Python',
@@ -14,7 +14,7 @@ var languagesChart = new Chart(ctx, {
       ],
       datasets: [{
             label: 'Languages',
-            data: [4,8, 9, 3, 6, 4, 5, 3],
+            data: [4,8, 9, 3, 6, 5, 5, 3],
             backgroundColor: [
               'rgba(100, 10, 132, 0.2)',
               'rgba(255, 99, 132, 0.2)',
@@ -41,12 +41,12 @@ var languagesChart = new Chart(ctx, {
   options: {
       responsive: true,
       maintainAspectRatio: true,
-      scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
+    //   scales: {
+    //     yAxes: [{
+    //         ticks: {
+    //             beginAtZero:true
+    //         }
+    //     }]
+    // }
   }
 });

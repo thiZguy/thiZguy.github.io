@@ -1,6 +1,6 @@
 var ctx = document.getElementById("toolsChart").getContext('2d');
 var toolsChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'doughnut',
   data: {
       labels: [
         'Git',
@@ -38,12 +38,12 @@ var toolsChart = new Chart(ctx, {
   options: {
       responsive: true,
       maintainAspectRatio: true,
-      scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
+    //   scales: {
+    //     yAxes: [{
+    //         ticks: {
+    //             beginAtZero:true
+    //         }
+    //     }]
+    // }
   }
 });
